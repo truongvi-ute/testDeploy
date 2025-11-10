@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hinh Chu Nhat cua toi</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>Nhap so do hinh chu nhat</h1>
+        
+        <form action="tinhCVDT" method="post">
+            <input type="hidden" name="action" value="tinhtoan">
+            
+            <label for="chieu-dai">Chieu Dai</label>
+            <input type="text" name="ChieuDai" required>
+            
+            <label for="chieu-rong">Chieu Rong</label>
+            <input type="text" name="ChieuRong" required>
+            
+            <input type="submit" name="Tinh" id="submit">
+        </form>
+    </body>
+</html>

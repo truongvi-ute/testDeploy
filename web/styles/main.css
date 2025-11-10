@@ -1,0 +1,57 @@
+/* ... code của h1 ... */
+h1 {
+    color: red;
+    padding-left: 50px
+}
+
+/* * BIẾN FORM THÀNH GRID CONTAINER
+ */
+form {
+    display: grid;
+    /* Cột 1 (label) rộng 150px, Cột 2 (input) rộng 200px */
+    grid-template-columns: 150px 200px;
+    
+    /* Khoảng cách giữa các hàng */
+    row-gap: 10px;
+    
+    /* Căn giữa các mục theo chiều dọc */
+    align-items: center; 
+}
+
+label {
+    /* Đã XÓA float và margin */
+    /* Căn lề phải cho đẹp */
+    text-align: right;
+    
+    /* Thêm một chút đệm bên phải label */
+    padding-right: 10px; 
+    
+    color: green;
+}
+
+input {
+    /* Đã XÓA margin-left và margin-top */
+    /* Width đã được kiểm soát bởi grid-template-columns (200px)
+       nên bạn có thể giữ hoặc xóa dòng 'width: 200px' này */
+    width: 200px; 
+    
+    /* Thêm box-sizing để width 200px bao gồm cả padding/border */
+    box-sizing: border-box; 
+}
+
+#submit {
+    background-color: cyan;
+    color: black;
+    
+    /* BẮT BUỘC: Đẩy nút này sang Cột 2 */
+    grid-column-start: 2; 
+    
+    /* Tùy chọn: căn nút về bên trái cột 2 */
+    justify-self: start; 
+    
+    /* Tùy chọn: cho nút submit có độ rộng vừa phải */
+    width: 100px; 
+    
+    /* Thêm một chút margin-top cho hàng nút */
+    margin-top: 10px;
+}
